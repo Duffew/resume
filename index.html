@@ -9,6 +9,8 @@
         type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rosie</title>
 </head>
@@ -35,16 +37,19 @@
                         <!-- 'list-inline' automatically shows the list horizontally -->
                         <ul id="nav" class="list-inline menucontainer">
                             <!-- 4 elements wide on small screens and above, 2 wide on small screens -->
-                             <!-- add menuitem class to li to help with styling icons -->
+                            <!-- add menuitem class to li to help with styling icons -->
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
                                 <!-- aria-hidden="true" - screen readers will ignore the icon -->
-                                <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <!-- hvr-sweep-to-bottom references the hover.css library linked in head -->
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>

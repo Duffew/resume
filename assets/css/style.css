@@ -70,6 +70,11 @@ header {
     font-size: 0;
 }
 
+/* align bottom of menu items with bottom of logo image */
+#nav {
+    margin: 0;
+}
+
 /* now give the list items only their font size back */
 #nav li {
     font-size: 14px;
@@ -111,5 +116,13 @@ header {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+/* -------------------------------------Hover.css */
+
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* ensure that the effect fills the entire menu item */
+    height: 120px;
 
 }
