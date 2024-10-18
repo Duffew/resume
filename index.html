@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rosie</title>
 </head>
 
 <body>
     <header>
-        <div class="row">
+        <div class="row no-gutters">
             <!-- column width of 1/3 on medium screens (4 = 1/3 of 12 on 768px and up) -->
             <!-- change div to anchor ready for logo image - links to home page-->
             <a class="col-md-4 logo" href="index.html">
@@ -20,12 +23,28 @@
             </a>
             <!-- column width of 2/3 on medium screens -->
             <div class="col-md-8">
-                <div class="row bg-color-name-title">
+                <div class="row no-gutters bg-color-name-title">
                     <!-- 1st child of a 'row' class MUST be a 'col' class -->
                     <div class="col heading">
                         <h1 class="name">Rosie Odenkirk</h1>
                         <h2 class="title">Full Stack Developer</h2>
-
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <!-- 'list-inline' automatically shows the list horizontally -->
+                        <ul id="nav" class="list-inline menucontainer">
+                            <!-- 4 elements wide on small screens and above, 2 wide on small screens -->
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
+                                <a href="#"><span>Home</span></a>
+                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
+                                <a href="#"><span>Resume</span></a>
+                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
+                                <a href="#"><span>Contact</span></a>
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
+                                <a href="#"><span>Download</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
