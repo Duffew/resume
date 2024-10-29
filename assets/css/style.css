@@ -315,4 +315,39 @@ footer {
     border-left: 1px solid;
 }
 
-/* NEXT STYLE PARAGRAPH - 6:05 in video */
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+/* use psuedo element'before' with 'content' attribute */
+/* creates a nice bullet point next to work history */
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+/* use psuedo element'after' with 'content' attribute */
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: "";
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
